@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'br.edu.ifsuldeminas.mch.login'
+    namespace 'br.edu.ifsuldeminas.mch.pdm.login'
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "br.edu.ifsuldeminas.mch.login"
+        applicationId "br.edu.ifsuldeminas.mch.pdm.login"
         minSdk 30
         targetSdk 36
         versionCode 1
