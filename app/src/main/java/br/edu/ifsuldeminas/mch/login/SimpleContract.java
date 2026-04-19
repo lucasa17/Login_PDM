@@ -1,7 +1,9 @@
-package br.edu.ifsuldeminas.mch.login;
+package br.edu.ifsuldeminas.mch.pdm.login;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
 
 import androidx.activity.result.contract.ActivityResultContract;
 import androidx.annotation.NonNull;
@@ -19,9 +21,9 @@ public class SimpleContract extends ActivityResultContract<String, String> {
 
     @Override
     public String parseResult(int resultCode, @Nullable Intent intent) {
-        if(resultCode != MainActivity.RESULT_OK || intent == null){
+        if (resultCode != Activity.RESULT_OK || intent == null)
             return "";
-        }
+
         return intent.getStringExtra("resultado");
     }
 }
